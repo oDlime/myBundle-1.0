@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/bundle.png">
+		<!-- <script src="https://cdn.bootcdn.net/ajax/libs/nightly.js/2.0.1/nightly.js"></script> -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="node_modules\animate.css\animate.css" /><!-- 动画 -->
+		<script src="/assets/js/jQuery.js"></script><!-- jQuery -->
+		<!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script> -->
+		<link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+		<script src="node_modules\rellax\rellax.js"></script><!-- 视差效果 -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script><!-- VUE -->
+		<link rel="stylesheet" href="assets/css/githubmd.css">
+		<link rel="stylesheet" href="assets/css/index.css" />
+		<script src="/assets/js/index.js"></script>
+		<script src="assets/js/getdir.js"></script>
+		<title>收纳袋</title>
+		<script>
+			window.onload = function(){
+				$("#xstool1").click(function(){
+					$("#sidebar").toggleClass("hidden-xs")
+					
+				})
+	
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid" id="header">
+			<a href="/home.html">
+				<img src="assets/img/bundle.png" class="hidden-sm hidden-xs animate__animated animate__slideInLeft"
+				id="header-logo" /></a>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 animate__animated animate__pulse animate__slideInLeft">
+				<span id="header-title">bundle</span>
+				<span class="hidden-xs">收纳袋</span>
+			</div>
+			<div class="col-lg-7 col-lg-push-2 col-md-7 col-md-push-2 col-sm-7 col-sm-push-2 hidden-xs animate__animated animate__slideInRight"
+				id="nav1">
+				<div class="col-lg-10 col-lg-push-2 col-md-pull-2 col-sm-pull-2">
+					<a href="/home.html" class="nav1-item page ">首页</a>
+					<a href="/index.html" class="nav1-item page ">文档</a>
+					<a href="/other.html" class="nav1-item page ">其它</a>
+				</div>
+			</div>
+
+			<div class="btn-toolbar col-xs-6 hidden-lg hidden-md hidden-sm col-xs-push-3" id="xstool" role="toolbar" aria-label="Toolbar with button groups">
+				<div class="btn-group me-2" role="group" aria-label="First group">
+				  <a href="/home.html" role="button" class="btn btn-primary btn-xs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+					<path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>
+				  </svg>  首页</a>
+				  <a role="button" class="btn btn-primary btn-xs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16">
+                    <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6l.5.667Z"/>
+                  </svg></a>
+				  <a role="button" class="btn btn-primary btn-xs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg></a>
+				</div>
+			</div><br />
+			<div class="btn-toolbar col-xs-4 hidden-lg hidden-md hidden-sm col-xs-push-3" id="xstool" role="toolbar" aria-label="Toolbar with button groups">
+				<div class="btn-group me-2" role="group" aria-label="First group">
+				  <button class="btn btn-primary btn-xs xstool2" id="xstool1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-code" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                  </svg>  文档列表</button>
+				</div>
+			</div>
+
+
+		
+			
+
+
+
+
+			<!-- <a href="#"><i class="bi bi-list xs-menu hidden-lg hidden-md hidden-sm"></i></a> -->
+		</div>
+		<div class="container-fluid" id="content">
+			<div id="sidebar" class="col-lg-3 col-md-3 col-sm-4 hidden-xs animate__animated animate__bounceInLeft">
+				<div class="sidebar-title"><a> <i class="bi bi-signpost-2"></i> 文档</a></div>
+				<div class="sidebar-one-list item-list">
+					<!--  -->
+					<div class="item" v-for="(item1,index) in dir">
+						<a class="sidebar-dir">{{item1.name}}<i
+								class="bi bi-caret-right-fill icon-dir"></i></a>
+						<span class="fpath">{{item1.dirPath}}</span>
+						<div class="sidebar-two-list item-list" v-for="(item2,index2) in item1.children ">
+							<a class="sidebar-dir">{{item2.name}}<i
+									class="bi bi-caret-right-fill icon-dir"></i> </a>
+							<span class="fpath">{{item2.dirPath}}</span>
+							<div class="sidebar-three-list item-list">
+								<div class="item" v-for="(item3,index3) in item2.children">
+									<a class="sidebar-dir">{{item3.name}}<i
+											class="bi bi-caret-right-fill icon-dir"></i></a>
+									<span class="fpath">{{item3.dirPath}}</span>
+									<div class="sidebar-four-list item-list" v-for="(item4,index4) in item3.children">
+										<a class="sidebar-dir">{{item4.name}}<i
+												class="bi bi-caret-right-fill icon-dir"></i></a>
+										<span class="fpath">{{item4.dirPath}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content-main" class="container col-lg-9 col-lg-push-3 col-md-9 col-md-push-3 col-sm-8 col-sm-push-4 animate__animated animate__bounceInRight">
+				<div class="content-head"></div>
+				<span class="content-logo-body ">
+					<span class="content-logo animate__animated animate__backInUp" id="content-logo-b">b</span>
+					<span class="content-logo animate__animated animate__bounceInUp" id="content-logo-u">u</span>
+					<span class="content-logo animate__animated animate__backInUp" id="content-logo-n">n</span>
+					<span class="content-logo animate__animated animate__bounceInUp" id="content-logo-d">d</span>
+					<span class="content-logo animate__animated animate__backInUp" id="content-logo-l">l</span>
+					<span class="content-logo animate__animated animate__bounceInUp" id="content-logo-e">e</span>
+				</span>
+				<div class="content-body">
+					<div class="tips">
+						<ul>
+
+
+
+
+
+
+
+						</ul>
+					</div>
+				</div>
+				<div class="content-foot"></div>
+			</div>
+		</div>
+	</body>
+</html>

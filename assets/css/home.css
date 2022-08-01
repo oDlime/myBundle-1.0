@@ -1,0 +1,53 @@
+/* body{
+    margin: opx auto;
+    padding: 0px;
+    background-color:#f5f3f2 ;
+    font-family: Book Antiqua,Verdana,Century Gothic，Helvetica，Microsoft JhengHei,YouYuan;
+    overflow: hidden;
+}
+.box{
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+}
+.logo{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 60px;
+}
+.content{
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    color: black;
+}
+.content .btn-group a{
+    
+}
+.logoname{
+    font-size: 100px;
+    font-weight: 1000;
+}
+#qqlink{
+    padding: 7px 30px 9px 30px;
+    margin-top: 20px;
+}
+#qqlink img{
+    margin-bottom: 2px;
+}
+.commitMessage{
+    margin: 0px auto;
+    width: 900px;
+}
+.commitMessage ol{
+    list-style: none;
+}
+.commitMessageTip{
+    color: #13393e;
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom:1px #7d4034 solid ;
+} */
